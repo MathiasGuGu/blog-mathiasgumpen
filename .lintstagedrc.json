@@ -1,5 +1,0 @@
-{
-  "*.{ts, tsx, js, jsx}": ["prettier --write", "eslint --cache --fix"],
-  "*.{ts, tsx}": ["tsc-files --noEmit -incremental false"],
-  "*.{ts, tsx, js, jsx, css, md}": ["prettier --write"]
-}

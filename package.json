@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint:code": "eslint --ignore-path .gitignore .",
+    "lint:styles": "stylelint  --ignore-path .gitignore \"**/*.scss\"",
+    "check:types": "tsc --noEmit",
+    "prettier": "prettier  --ignore-path .gitignore --check ."
   },
   "lint-staged": {
     "*.{ts, tsx, js, jsx}": [
