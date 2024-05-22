@@ -11,7 +11,9 @@
     "lint:code": "eslint --ignore-path .gitignore .",
     "lint:styles": "stylelint  --ignore-path .gitignore \"**/*.scss\"",
     "check:types": "tsc --noEmit",
-    "prettier": "prettier  --ignore-path .gitignore --check ."
+    "prettier": "prettier  --ignore-path .gitignore --check .",
+    "eslint": "eslint --color --ext .html,.js,.json,.jsx,.md,.ts,.tsx *.* src",
+    "eslint:fix": "npm run eslint -- --fix"
   },
   "lint-staged": {
     "*.{ts, tsx, js, jsx}": [
