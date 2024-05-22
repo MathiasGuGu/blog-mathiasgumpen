@@ -9,11 +9,6 @@
     "lint": "next lint",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "*.{ts,tsx}": "tsc-files --noEmit --incremental skip",
-    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
-  },
   "dependencies": {
     "@tanstack/react-query": "^5.37.1",
     "framer-motion": "^11.2.6",
@@ -21,6 +16,7 @@
     "lint-staged": "^15.2.4",
     "lucide-react": "^0.379.0",
     "next": "14.2.3",
+    "prettier": "^3.2.5",
     "react": "^18",
     "react-dom": "^18",
     "tsc-files": "^1.1.4"
