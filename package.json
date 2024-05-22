@@ -9,6 +9,18 @@
     "lint": "next lint",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{ts, tsx, js, jsx}": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ],
+    "*.{ts, tsx}": [
+      "tsc-files --noEmit -incremental false"
+    ],
+    "*.{ts, tsx, js, jsx, css, md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "@tanstack/react-query": "^5.37.1",
     "framer-motion": "^11.2.6",
